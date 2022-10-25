@@ -63,11 +63,13 @@ a {
 
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .section {
@@ -77,9 +79,8 @@ img {
 
 .container {
   width: 1200px;
-  margin-inline: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .button {
@@ -90,7 +91,6 @@ img {
   cursor: pointer;
   border: none;
   min-width: fit-content;
-  padding: 10px 32px;
   border-radius: 4px;
 }
 
@@ -118,11 +118,11 @@ img {
 
 .header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header-nav {
+  margin-left: 93px;
   display: flex;
   gap: 50px;
 }
@@ -130,6 +130,7 @@ img {
 .header .contacts {
   display: flex;
   gap: 50px;
+  margin-left: auto;
 }
 
 
@@ -191,8 +192,9 @@ img {
 .button.button-hero {
   font-weight: var(--fw-hero-button);
   letter-spacing: 0.06em;
-  background-color: var(--accent-clr-blue);
   color: var(--txt-clr-white);
+  padding: 10px 32px;
+  background-color: var(--accent-clr-blue);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -229,9 +231,9 @@ img {
 .section.team {
   background-color: var(--bg-clr-grey);
 }
-.team {
+.team-list {
   display: flex;
-  gap: 30px;
+  column-gap: 30px;
 }
 .team-member {
   background-color: var(--bg-clr-primary);
@@ -287,16 +289,13 @@ img {
   display: flex;
   margin-top: 50px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 30px;
-}
-
-.project {
-  border: 1px solid var(--border-clr);
+  /* justify-content: space-between; */
+  gap: 30px;
 }
 
 .project-link div {
   padding: 20px 24px;
+  border: 1px solid var(--border-clr);
 }
 
 .project-title {
@@ -334,7 +333,7 @@ img {
 
 .contact.footer {
   color: var(--txt-clr-main);
-  }
+}
 
 .footer-contacts > *{
   line-height: 1.5;
@@ -344,9 +343,6 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-contacts:first-child {
-  margin-top: 20px;
-}
 
 /* hover, focus for FOOTER and HEADER contacts*/
 
